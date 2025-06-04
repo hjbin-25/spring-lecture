@@ -1,4 +1,4 @@
-package hello.core.member;
+package hello.core;
 
 import java.lang.*;
 import hello.core.member.Member;
