@@ -7,7 +7,6 @@ import hello.core.member.Member;
 import hello.core.member.Grade;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class RateDiscountPolicyTest {
 
