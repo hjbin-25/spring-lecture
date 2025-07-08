@@ -10,7 +10,9 @@ import org.junit.jupiter.api.Test;
 import hello.core.member.Member;
 import hello.core.member.Grade;
 import hello.core.AppConfig;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceTest {
 
     MemberService memberService;

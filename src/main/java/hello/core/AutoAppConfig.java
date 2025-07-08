@@ -1,9 +1,9 @@
 package hello.core;
 
-import org.springframework.context.annotation.ComponentScan;
+import hello.core.member.MemberRepository;
+import hello.core.member.MemoryMemberRepository;
+import org.springframework.context.annotation.*;
 import org.springframework.context.annotation.ComponentScan.Filter;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
 
 @Configuration
 @ComponentScan(
@@ -13,4 +13,9 @@ import org.springframework.context.annotation.FilterType;
 )
 public class AutoAppConfig {
 
+    @Bean("memoryMemberRepository")
+    @Primary
+    MemberRepository memberRepository() {
+        return new MemoryMemberRepository();
+    }
 }
