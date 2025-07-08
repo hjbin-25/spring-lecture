@@ -12,6 +12,7 @@ import hello.core.member.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class AppConfig {
@@ -23,6 +24,7 @@ public class AppConfig {
     }
 
     @Bean
+    @Primary
     public MemberRepository memberRepository() {
         System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository();
@@ -37,6 +39,7 @@ public class AppConfig {
     }
 
     @Bean
+    @Primary
     public DiscountPolicy discountPolicy() {
         return new RateDiscountPolicy();
     }

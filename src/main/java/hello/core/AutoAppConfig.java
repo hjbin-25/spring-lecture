@@ -14,7 +14,6 @@ import org.springframework.context.annotation.ComponentScan.Filter;
 public class AutoAppConfig {
 
     @Bean("memoryMemberRepository")
-    @Primary
     MemberRepository memberRepository() {
         return new MemoryMemberRepository();
     }
