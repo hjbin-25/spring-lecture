@@ -43,6 +43,6 @@ public class OrderServiceTest {
                 () -> orderService.createOrder(1L, "itemA", 10000));
 //        orderService.createOrder(1L, "itemA", 10000);
 //        orderService.setMemberRepository(new MemoryMemberRepository());
-        orderService.setDiscountPolicy(new RateDiscountPolicy());
+//        orderService.setDiscountPolicy(new RateDiscountPolicy());
     }
 }

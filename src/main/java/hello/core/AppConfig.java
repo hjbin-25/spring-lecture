@@ -9,7 +9,6 @@ import hello.core.member.MemoryMemberRepository;
 import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
 import hello.core.member.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -36,6 +35,7 @@ public class AppConfig {
         return new OrderServiceImpl(
                 memberRepository(),
                 discountPolicy());
+//        return null;
     }
 
     @Bean
