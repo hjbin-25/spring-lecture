@@ -39,10 +39,10 @@ public class OrderServiceTest {
     @Test
     void fieldInjectionTest() {
         OrderServiceImpl orderService = new OrderServiceImpl();
-        assertThrows(NullPointerException.class,
+        assertThrows(NullPointerException.class, // 잘못된 참조로 인한 널 포인터 참조 에러 발생확인
                 () -> orderService.createOrder(1L, "itemA", 10000));
 //        orderService.createOrder(1L, "itemA", 10000);
-        orderService.setMemberRepository(new MemoryMemberRepository());
+//        orderService.setMemberRepository(new MemoryMemberRepository());
         orderService.setDiscountPolicy(new RateDiscountPolicy());
     }
 }
