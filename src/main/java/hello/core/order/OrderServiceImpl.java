@@ -46,7 +46,7 @@ public class OrderServiceImpl implements OrderService {
 //    }
 //
 //    @Autowired
-//    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
+//    public void setDiscountPolicy(@MainDiscountPolicy DiscountPolicy discountPolicy) {
 ////        System.out.println("discountPolicy = " + discountPolicy);
 //        this.discountPolicy = discountPolicy;
 //    }

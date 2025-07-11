@@ -1,5 +1,6 @@
 package hello.core.member;
 
+import hello.core.annotation.MainDiscountPolicy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
