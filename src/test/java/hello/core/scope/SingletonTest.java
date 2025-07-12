@@ -30,7 +30,6 @@ public class SingletonTest {
     }
 
     @Scope("singleton")
-    @Configuration
     static class SingletonBean {
 
         @PostConstruct
