@@ -1,6 +1,7 @@
 package hello.core.lifecycle;
 
 import ch.qos.logback.core.spi.LifeCycle;
+import jakarta.inject.Provider;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
